@@ -1,0 +1,32 @@
+<resources>
+    <string name="setting_title">监测设置</string>
+    <string name="app_name">Good Child</string>
+    <string name="warning_msg">瓜瓜，你已经看了%2$d分钟了，要休息%2$d分钟才能继续看哦</string>
+    <string name="toast_tips">开始计时监测</string>
+    <string name="toast_save_success">保存成功</string>
+    <string name="toast_save_fail">保存失败</string>
+    <string name="countdown_msg">倒计时开始：</string>
+    <string name="setting_enable_monitor">监测开关:</string>
+    <string name="setting_enable">开</string>
+    <string name="setting_disable">关</string>
+    <string name="setting_add">新增</string>
+    <string name="setting_edit">修改</string>
+    <string name="setting_save">保存</string>
+    <string name="setting_delete">删除</string>
+    <string name="setting_cancel">取消</string>
+    <string name="setting_monitor_periods">监测周期:</string>
+    <string name="setting_break_duration">休息时长:</string>
+    <string name="setting_monitor_timers">监测时段:</string>
+    <string name="setting_monitor_time_connector">-</string>
+    <string name="setting_monitor_start_time">开始时间:</string>
+    <string name="setting_monitor_end_time">结束时间:</string>
+    <string name="setting_monitor_active_day">监测时间</string>
+    <string name="setting_monitor_active_Monday">周一</string>
+    <string name="setting_monitor_active_Tuesday">周二</string>
+    <string name="setting_monitor_active_Wednesday">周三</string>
+    <string name="setting_monitor_active_Thursday">周四</string>
+    <string name="setting_monitor_active_Friday">周五</string>
+    <string name="setting_monitor_active_Saturday">周六</string>
+    <string name="setting_monitor_active_Sunday">周日</string>
+    <string name="setting_time_unit">分钟</string>
+</resources>

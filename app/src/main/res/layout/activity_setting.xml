@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/setting_width"
+    android:layout_height="match_parent"
+    android:layout_gravity="top|center_horizontal"
+    android:layout_margin="@dimen/content_margin"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.quickthink.tvchildrenmonitor.SettingActivity">
+
+
+    <TextView
+        android:id="@+id/txt_enable_monitor"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/row_item_height"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:text="@string/setting_enable_monitor" />
+
+
+    <ToggleButton
+        android:id="@+id/setting_enable_monitor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txt_enable_monitor"
+        android:checked="true"
+        android:textOff="@string/setting_disable"
+        android:textOn="@string/setting_enable" />
+
+    <View
+        android:id="@+id/divider_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/setting_enable_monitor"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/txt_monitor_periods"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/row_item_height"
+        android:gravity="center"
+        android:layout_below="@id/divider_1"
+        android:text="@string/setting_monitor_periods" />
+
+    <SeekBar
+        android:id="@+id/setting_monitor_periods"
+        android:layout_width="@dimen/seekbar_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider_1"
+        android:layout_toRightOf="@id/txt_monitor_periods"
+        android:layout_alignBottom="@id/txt_monitor_periods"
+        android:max="60"
+        android:min="1" />
+
+    <TextView
+        android:id="@+id/setting_monitor_periods_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/row_item_height"
+        android:gravity="center"
+        android:layout_below="@id/divider_1"
+        android:layout_alignParentRight="true" />
+
+    <View
+        android:id="@+id/divider_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txt_monitor_periods"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/txt_break_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/row_item_height"
+        android:gravity="center"
+        android:layout_below="@id/divider_2"
+        android:text="@string/setting_break_duration" />
+
+    <SeekBar
+        android:id="@+id/setting_break_duration"
+        android:layout_width="@dimen/seekbar_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider_2"
+        android:layout_toRightOf="@id/txt_break_duration"
+        android:layout_alignBottom="@id/txt_break_duration"
+        android:max="60"
+        android:min="1" />
+
+    <TextView
+        android:id="@+id/setting_break_duration_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/row_item_height"
+        android:gravity="center"
+        android:layout_below="@id/divider_2"
+        android:layout_alignParentRight="true" />
+
+    <View
+        android:id="@+id/divider_3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txt_break_duration"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/txt_monitor_timers"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/row_item_height"
+        android:gravity="center"
+        android:layout_below="@id/divider_3"
+        android:text="@string/setting_monitor_timers" />
+
+    <Button
+        android:id="@+id/setting_add_monitor_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/divider_3"
+        android:text="@string/setting_add" />
+
+    <View
+        android:id="@+id/divider_4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txt_monitor_timers"
+        android:background="@color/colorDiv" />
+
+    <ListView
+        android:id="@+id/setting_monitor_timers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider_4" />
+
+    <View
+        android:id="@+id/divider_5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/setting_monitor_timers"
+        android:background="@color/colorDiv" />
+
+    <Button
+        android:id="@+id/setting_save_monitor_config"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider_5"
+        android:layout_alignParentRight="true"
+        android:text="@string/setting_save" />
+
+
+</RelativeLayout>
